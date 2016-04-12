@@ -1,6 +1,6 @@
 Package.describe({
   name: 'shuttler:selection-marking',
-  version: '0.0.0',
+  version: '0.0.1',
   summary: 'Marking documents if has selected link in the graph.',
   git: 'https://github.com/meteor-shuttler/selection-marking.git',
   documentation: 'README.md'
@@ -13,8 +13,9 @@ Package.onUse(function(api) {
   
   api.use('matb33:collection-hooks@0.8.1');
   api.use('aldeed:collection2@2.9.0');
-  api.use('shuttler:graphs@0.0.15');
-  api.use('shuttler:graph-marking@0.0.0');
+  api.use('shuttler:graphs@0.0.16');
+  api.use('shuttler:selection@0.0.7');
+  api.use('shuttler:graph-marking@0.0.1');
   
   api.addFiles('selection-marking.js');
   
